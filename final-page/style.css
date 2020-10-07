@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+:root {
+  /* bg color settings */
+  --bg-nav-cta-btn: #ff8e5e;
+
+  /* font color settings */
+  --font-color: #f6f4f2;
+  --btn-font-color: #f6f4f2;
+
+  /* radius */
+  --radius: 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Righteous", sans-serif;
+}
+
+.hero-page {
+  height: 100vh;
+  background-image: url("../assets/hero-page-cat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-list {
+  background: transparent;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.nav-logo {
+  height: 4rem;
+}
+
+.nav-item:first-of-type {
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+.nav-cta-btn {
+  font-family: "Righteous", sans-serif;
+  font-size: 1rem;
+  background: var(--bg-nav-cta-btn);
+  color: var(--btn-font-color);
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: transform 300ms ease-in;
+}
+
+.nav-item a:hover {
+  opacity: 0.6;
+  transition: opacity 300ms ease-in;
+}
+
+.nav-cta-btn:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease-in;
+}
