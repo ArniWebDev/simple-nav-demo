@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 :root {
   /* bg color settings */
   --bg-nav-cta-btn: #fac006;
@@ -18,4 +20,67 @@
 
 html {
   font-family: "Righteous", sans-serif;
+}
+
+.hero-page {
+  height: 100vh;
+  background-image: url("./assets/hero-page-cat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 2rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.nav-item a:hover {
+  opacity: 0.6;
+  transition: opacity 300ms ease-in;
+}
+
+.nav-item:first-of-type {
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+.nav-logo {
+  height: 4rem;
+}
+
+.nav-cta-btn {
+  font-family: "Righteous", sans-serif;
+  font-size: 1rem;
+  background-color: var(--bg-nav-cta-btn);
+  color: var(--btn-font-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: transform 300ms ease-in;
+}
+
+.nav-cta-btn:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease-in;
 }
